@@ -1,5 +1,5 @@
 import "./App.css";
-import logo from "./assets/mahira01.png";
+import logo from "./assets/anila01.png";
 
 import fire from "./assets/Element_Fire.png";
 import water from "./assets/Element_Water.png";
@@ -71,13 +71,13 @@ function App() {
             <img src={logo} alt="Avatar" style={{ width: "auto" }} />
             <div class="container">
               <h4>
-                <b>Mahira</b>
+                <b>Anila</b>
               </h4>
               <p>
-                Um dos Doze Generais Divinos, Mahira é a Rainha dos Galos.
-                Embora ela não tenha as asas adequadas a esse título, sua
-                pequena estrutura abriga grande poder e gênio criativo. Algum
-                dia ela conduzirá o povo do céu por todo o caminho até os céus.
+                Um dos Doze Generais Divinos, ela protege o sul-sudoeste. Este
+                gentil cordeiro de deusa abomina o conflito e ora pela paz
+                mundial. Ela suportou o isolamento pelo que pareceu uma
+                eternidade, mas agora busca novas terras, guiada pelas estrelas.
               </p>
             </div>
           </div>
