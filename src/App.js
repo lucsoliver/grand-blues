@@ -1,90 +1,62 @@
-import "./App.css";
-import logo from "./assets/mahira01.png";
+import React from "react";
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import Anila from "./pages/fire/Anila";
+import Mahira from "./pages/earth/Mahira";
 
-import fire from "./assets/Element_Fire.png";
-import water from "./assets/Element_Water.png";
-import earth from "./assets/Element_Earth.png";
-import wind from "./assets/Element_Wind.png";
-import light from "./assets/Element_Light.png";
-import dark from "./assets/Element_Dark.png";
-
-function App() {
+export default function BasicExample() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <body>
-          <div class="head">
-            <h1>Os 12 Generais</h1>
-          </div>
-          <div class="tab">
-            <ul class="tabnav">
-              <li class="tabactive fire">
-                <img
-                  src={fire}
-                  alt="Fire"
-                  style={{ width: "auto", height: "auto" }}
-                />
-              </li>
+    <Router>
+      <div>
+        <ul>
+          <li>
+            <Link to="/">Home</Link>
+          </li>
+          <li>
+            <Link to="/fire">Fire</Link>
+          </li>
+          <li>
+            <Link to="/earth">Earth</Link>
+          </li>
+        </ul>
 
-              <li class="tabactive water">
-                <img
-                  src={water}
-                  alt="Water"
-                  style={{ width: "auto", height: "auto" }}
-                />
-              </li>
+        <hr />
 
-              <li class="tabactive earth">
-                <img
-                  src={earth}
-                  alt="Earth"
-                  style={{ width: "auto", height: "auto" }}
-                />
-              </li>
+        <Switch>
+          <Route exact path="/">
+            <Home />
+          </Route>
+          <Route path="/fire">
+            <Anila />
+          </Route>
+          <Route path="/earth">
+            <Mahira />
+          </Route>
+        </Switch>
+      </div>
+    </Router>
+  );
+}
 
-              <li class="tabactive wind">
-                <img
-                  src={wind}
-                  alt="Wind"
-                  style={{ width: "auto", height: "auto" }}
-                />
-              </li>
-
-              <li class="tabactive light">
-                <img
-                  src={light}
-                  alt="Light"
-                  style={{ width: "auto", height: "auto" }}
-                />
-              </li>
-
-              <li class="tabactive dark">
-                <img
-                  src={dark}
-                  alt="Dark"
-                  style={{ width: "auto", height: "auto" }}
-                />
-              </li>
-            </ul>
-          </div>
-          <div class="card">
-            <img src={logo} alt="Avatar" style={{ width: "auto" }} />
-            <div class="container">
-              <h4>
-                <b>Mahira</b>
-              </h4>
-              <p>
-                Um dos Doze Generais Divinos, Mahira é a Rainha dos Galos.
-                Embora ela não tenha as asas adequadas a esse título, sua
-                pequena estrutura abriga grande poder e gênio criativo. Algum
-                dia ela conduzirá o povo do céu por todo o caminho até os céus.
-              </p>
-            </div>
-          </div>
-        </body>
-      </header>
+function Home() {
+  return (
+    <div>
+      <h2>Home</h2>
     </div>
   );
 }
 
-export default App;
+function Fire() {
+  return (
+    <div>
+      <h2>Fire</h2>
+    </div>
+  );
+}
+
+function Earth() {
+  return (
+    <div>
+      <h2>Earth</h2>
+    </div>
+  );
+}

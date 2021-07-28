@@ -1,12 +1,12 @@
-import "./App.css";
-import logo from "./assets/mahira01.png";
+import "./styles.css";
+import logo from "../../assets/mahira01.png";
 
-import fire from "./assets/Element_Fire.png";
-import water from "./assets/Element_Water.png";
-import earth from "./assets/Element_Earth.png";
-import wind from "./assets/Element_Wind.png";
-import light from "./assets/Element_Light.png";
-import dark from "./assets/Element_Dark.png";
+// import fire from "../assets/Element_Fire.png";
+// import water from "../assets/Element_Water.png";
+// import earth from "../assets/Element_Earth.png";
+// import wind from "../assets/Element_Wind.png";
+// import light from "../assets/Element_Light.png";
+// import dark from "../assets/Element_Dark.png";
 
 function App() {
   return (
@@ -16,7 +16,7 @@ function App() {
           <div class="head">
             <h1>Os 12 Generais</h1>
           </div>
-          <div class="tab">
+          {/* <div class="tab">
             <ul class="tabnav">
               <li class="tabactive fire">
                 <img
@@ -66,7 +66,7 @@ function App() {
                 />
               </li>
             </ul>
-          </div>
+          </div> */}
           <div class="card">
             <img src={logo} alt="Avatar" style={{ width: "auto" }} />
             <div class="container">
