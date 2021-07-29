@@ -8,7 +8,7 @@ import logo from "../../assets/mahira01.png";
 // import light from "../assets/Element_Light.png";
 // import dark from "../assets/Element_Dark.png";
 
-function App() {
+function Mahira() {
   return (
     <div className="App">
       <header className="App-header">
@@ -87,4 +87,4 @@ function App() {
   );
 }
 
-export default App;
+export default Mahira;
