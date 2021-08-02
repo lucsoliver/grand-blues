@@ -3,6 +3,8 @@ import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
 import Anila from "../pages/fire/Anila";
 import Mahira from "../pages/earth/Mahira";
+import Vikala from "../pages/dark/Vikala";
+import Kumbhira from "../pages/light/Kumbhira";
 
 import "./styles.css";
 
@@ -59,19 +61,23 @@ export default class Header extends Component {
             </li>
 
             <li class="tabactive light">
-              <img
-                src={light}
-                alt="Light"
-                style={{ width: "auto", height: "auto" }}
-              />
+              <Link to="/light">
+                <img
+                  src={light}
+                  alt="Light"
+                  style={{ width: "auto", height: "auto" }}
+                />
+              </Link>
             </li>
 
             <li class="tabactive dark">
-              <img
-                src={dark}
-                alt="Dark"
-                style={{ width: "auto", height: "auto" }}
-              />
+              <Link to="/dark">
+                <img
+                  src={dark}
+                  alt="Dark"
+                  style={{ width: "auto", height: "auto" }}
+                />
+              </Link>
             </li>
           </ul>
           <hr />
@@ -85,6 +91,12 @@ export default class Header extends Component {
             </Route>
             <Route path="/earth">
               <Mahira />
+            </Route>
+            <Route path="/dark">
+              <Vikala />
+            </Route>
+            <Route path="/light">
+              <Kumbhira />
             </Route>
           </Switch>
         </div>
@@ -114,4 +126,12 @@ function Earth() {
       <h2>Earth</h2>
     </div>
   );
+
+  function Dark() {
+    return (
+      <div>
+        <h2>Dark</h2>
+      </div>
+    );
+  }
 }
