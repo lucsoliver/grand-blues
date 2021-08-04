@@ -2,9 +2,12 @@ import React, { Component } from "react";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
 import Anila from "../pages/fire/Anila";
-import Mahira from "../pages/earth/Mahira";
-import Vikala from "../pages/dark/Vikala";
 import Kumbhira from "../pages/light/Kumbhira";
+import Vikala from "../pages/dark/Vikala";
+import Vajra from "../pages/water/Vajra";
+import Catura from "../pages/wind/Catura";
+import Andira from "../pages/wind/Andira";
+import Mahira from "../pages/earth/Mahira";
 
 import "./styles.css";
 
@@ -35,11 +38,13 @@ export default class Header extends Component {
             </li>
 
             <li class="tabactive water">
-              <img
-                src={water}
-                alt="Water"
-                style={{ width: "auto", height: "auto" }}
-              />
+              <Link to="/water">
+                <img
+                  src={water}
+                  alt="Water"
+                  style={{ width: "auto", height: "auto" }}
+                />
+              </Link>
             </li>
 
             <li class="tabactive earth">
@@ -53,11 +58,13 @@ export default class Header extends Component {
             </li>
 
             <li class="tabactive wind">
-              <img
-                src={wind}
-                alt="Wind"
-                style={{ width: "auto", height: "auto" }}
-              />
+              <Link to="/wind">
+                <img
+                  src={wind}
+                  alt="Wind"
+                  style={{ width: "auto", height: "auto" }}
+                />
+              </Link>
             </li>
 
             <li class="tabactive light">
@@ -98,6 +105,12 @@ export default class Header extends Component {
             <Route path="/light">
               <Kumbhira />
             </Route>
+            <Route path="/water">
+              <Vajra />
+            </Route>
+            <Route path="/wind">
+              <Andira />
+            </Route>
           </Switch>
         </div>
       </Router>
@@ -131,6 +144,27 @@ function Earth() {
     return (
       <div>
         <h2>Dark</h2>
+      </div>
+    );
+  }
+  function Light() {
+    return (
+      <div>
+        <h2>Light</h2>
+      </div>
+    );
+  }
+  function Water() {
+    return (
+      <div>
+        <h2>Water</h2>
+      </div>
+    );
+  }
+  function Wind() {
+    return (
+      <div>
+        <h2>Wind</h2>
       </div>
     );
   }

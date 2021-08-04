@@ -1,7 +1,7 @@
 import "./styles.css";
-import logo from "../../assets/mahira01.png";
+import logo from "../../assets/catura01.png";
 
-function Mahira() {
+function Catura() {
   return (
     <div className="App">
       <header className="App-header">
@@ -14,13 +14,13 @@ function Mahira() {
             <img src={logo} alt="Avatar" style={{ width: "auto" }} />
             <div class="container">
               <h4>
-                <b>Mahira</b>
+                <b>Catura</b>
               </h4>
               <p>
-                Um dos Doze Generais Divinos, Mahira é a Rainha dos Galos.
-                Embora ela não tenha as asas adequadas a esse título, sua
-                pequena estrutura abriga grande poder e gênio criativo. Algum
-                dia ela conduzirá o povo do céu por todo o caminho até os céus.
+                Um dos Doze Generais Divinos e guardião do norte-nordeste, este
+                Boi Divino adora olhar para o céu enquanto sonha com o romance.
+                As vacas levantam suas vozes em uníssono enquanto sua cuidadora
+                embarca em sua viagem destinada pelos céus sem fim.
               </p>
             </div>
           </div>
@@ -30,4 +30,4 @@ function Mahira() {
   );
 }
 
-export default Mahira;
+export default Catura;
