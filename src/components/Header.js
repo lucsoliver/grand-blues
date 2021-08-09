@@ -1,11 +1,13 @@
 import React, { Component } from "react";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
+// import Home from "../pages/Home/Home";
+
 import Anila from "../pages/fire/Anila";
 import Kumbhira from "../pages/light/Kumbhira";
 import Vikala from "../pages/dark/Vikala";
 import Vajra from "../pages/water/Vajra";
-import Catura from "../pages/wind/Catura";
+// import Catura from "../pages/wind/Catura";
 import Andira from "../pages/wind/Andira";
 import Mahira from "../pages/earth/Mahira";
 
@@ -24,9 +26,9 @@ export default class Header extends Component {
       <Router>
         <div class="tab">
           <ul class="tabnav">
-            <li>
-              <Link to="/">Home</Link>
-            </li>
+            {/* <li>
+              <Link to="/home">Home</Link>
+            </li> */}
             <li class="tabactive fire">
               <Link to="/fire">
                 <img
@@ -90,9 +92,9 @@ export default class Header extends Component {
           <hr />
 
           <Switch>
-            <Route exact path="/">
+            {/* <Route path="/home">
               <Home />
-            </Route>
+            </Route> */}
             <Route path="/fire">
               <Anila />
             </Route>
@@ -117,55 +119,54 @@ export default class Header extends Component {
     );
   }
 }
-function Home() {
-  return (
-    <div>
-      <h2>Home</h2>
-    </div>
-  );
-}
+// function Home() {
+//   return (
+//     <div>
+//       <h2>Home</h2>
+//     </div>
+//   );
+// }
 
-function Fire() {
-  return (
-    <div>
-      <h2>Fire</h2>
-    </div>
-  );
-}
+// function Fire() {
+//   return (
+//     <div>
+//       <h2>Fire</h2>
+//     </div>
+//   );
+// }
 
-function Earth() {
-  return (
-    <div>
-      <h2>Earth</h2>
-    </div>
-  );
-
-  function Dark() {
-    return (
-      <div>
-        <h2>Dark</h2>
-      </div>
-    );
-  }
-  function Light() {
-    return (
-      <div>
-        <h2>Light</h2>
-      </div>
-    );
-  }
-  function Water() {
-    return (
-      <div>
-        <h2>Water</h2>
-      </div>
-    );
-  }
-  function Wind() {
-    return (
-      <div>
-        <h2>Wind</h2>
-      </div>
-    );
-  }
-}
+// function Earth() {
+//   return (
+//     <div>
+//       <h2>Earth</h2>
+//     </div>
+//   );
+// }
+// function Dark() {
+//   return (
+//     <div>
+//       <h2>Dark</h2>
+//     </div>
+//   );
+// }
+// function Light() {
+//   return (
+//     <div>
+//       <h2>Light</h2>
+//     </div>
+//   );
+// }
+// function Water() {
+//   return (
+//     <div>
+//       <h2>Water</h2>
+//     </div>
+//   );
+// }
+// function Wind() {
+//   return (
+//     <div>
+//       <h2>Wind</h2>
+//     </div>
+//   );
+// }
