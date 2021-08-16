@@ -45,9 +45,6 @@ p {
   color: #fafafa;
 }
 
-h1 {
-}
-
 h4 {
   font-size: 18px;
   color: #fafafa;
@@ -77,36 +74,6 @@ ul.tabnav li {
   width: auto;
   height: auto;
   box-shadow: 0 1px 0 0 rgb(245, 172, 172);
-}
-
-.water {
-  width: auto;
-  height: auto;
-  box-shadow: 0 1px 0 0 rgb(172, 183, 245);
-}
-
-.earth {
-  width: auto;
-  height: auto;
-  box-shadow: 0 1px 0 0 rgb(121, 90, 69);
-}
-
-.wind {
-  width: auto;
-  height: auto;
-  box-shadow: 0 1px 0 0 rgb(181, 245, 172);
-}
-
-.light {
-  width: auto;
-  height: auto;
-  box-shadow: 0 1px 0 0 rgb(244, 245, 172);
-}
-
-.dark {
-  width: auto;
-  height: auto;
-  box-shadow: 0 1px 0 0 rgb(245, 172, 245);
 }
 
 @media only screen and (max-width: 768px) {

@@ -1,6 +1,7 @@
 /* table  */
 .tab {
-  margin-bottom: 25px;
+  background-color: #3b3d42;
+  text-align: center;
 }
 
 .tabactive {

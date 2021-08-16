@@ -11,14 +11,14 @@ import Vajra from "../pages/water/Vajra";
 import Andira from "../pages/wind/Andira";
 import Mahira from "../pages/earth/Mahira";
 
-import "./styles.css";
-
 import fire from "../assets/Element_Fire.png";
 import water from "../assets/Element_Water.png";
 import earth from "../assets/Element_Earth.png";
 import wind from "../assets/Element_Wind.png";
 import light from "../assets/Element_Light.png";
 import dark from "../assets/Element_Dark.png";
+
+import "./styles.css";
 
 export default class Header extends Component {
   render() {

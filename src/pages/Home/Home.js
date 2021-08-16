@@ -8,8 +8,8 @@ function Home() {
       <header className="App-header">
         <body>
           <div class="head">
-            <Header />
-            <h1>Os 12 Generais</h1>
+            {/* <Header /> */}
+            {/* <h1>Os 12 Generais</h1> */}
           </div>
         </body>
       </header>
