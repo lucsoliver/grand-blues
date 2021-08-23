@@ -1,15 +1,15 @@
 import React, { Component } from "react";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
-// import Home from "../pages/Home/Home";
+import Home from "../pages/Home/Home";
 
-import Anila from "../pages/fire/Anila";
-import Kumbhira from "../pages/light/Kumbhira";
-import Vikala from "../pages/dark/Vikala";
-import Vajra from "../pages/water/Vajra";
+import Anila from "../pages/elements/fire/Anila";
+import Kumbhira from "../pages/elements/light/Kumbhira";
+import Vikala from "../pages/elements/dark/Vikala";
+import Vajra from "../pages/elements/water/Vajra";
 // import Catura from "../pages/wind/Catura";
-import Andira from "../pages/wind/Andira";
-import Mahira from "../pages/earth/Mahira";
+import Andira from "../pages/elements/wind/Andira";
+import Mahira from "../pages/elements/earth/Mahira";
 
 import fire from "../assets/Element_Fire.png";
 import water from "../assets/Element_Water.png";
@@ -26,9 +26,9 @@ export default class Header extends Component {
       <Router>
         <div class="tab">
           <ul class="tabnav">
-            {/* <li>
+            <li>
               <Link to="/home">Home</Link>
-            </li> */}
+            </li>
             <li class="tabactive fire">
               <Link to="/fire">
                 <img
@@ -92,9 +92,9 @@ export default class Header extends Component {
           <hr />
 
           <Switch>
-            {/* <Route path="/home">
+            <Route path="/home">
               <Home />
-            </Route> */}
+            </Route>
             <Route path="/fire">
               <Anila />
             </Route>

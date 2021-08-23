@@ -4,15 +4,15 @@
   text-align: center;
 }
 
-.tabactive {
-  width: auto;
-  height: 5vh;
-}
-
 ul.tabnav {
   margin: 0;
   padding: 0;
   font: bold 14px sans-serif;
+}
+
+.tabactive {
+  width: auto;
+  height: 5vh;
 }
 
 ul.tabnav li {

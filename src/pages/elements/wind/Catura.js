@@ -1,17 +1,18 @@
-import "./styles.css";
-import logo from "../../assets/catura01.png";
+import "../styles.css";
+
+import logo from "../../../assets/catura01.png";
 
 function Catura() {
   return (
     <div className="App">
-      <body>
+      <body className="Container">
         <div class="head">
-          <h1>Os 12 Generais</h1>
+          <h1>Boi</h1>
         </div>
 
         <div class="card">
           <img src={logo} alt="Avatar" style={{ width: "auto" }} />
-          <div class="container">
+          <div class="card-body">
             <h4>
               <b>Catura</b>
             </h4>
