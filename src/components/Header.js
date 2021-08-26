@@ -11,6 +11,8 @@ import Vajra from "../pages/elements/water/Vajra";
 import Andira from "../pages/elements/wind/Andira";
 import Mahira from "../pages/elements/earth/Mahira";
 
+import logo from "../assets/Vyrnball.png";
+
 import fire from "../assets/Element_Fire.png";
 import water from "../assets/Element_Water.png";
 import earth from "../assets/Element_Earth.png";
@@ -26,8 +28,14 @@ export default class Header extends Component {
       <Router>
         <div class="tab">
           <ul class="tabnav">
-            <li>
-              <Link to="/home">Home</Link>
+            <li class="tabactive home">
+              <Link to="/home">
+                <img
+                  src={logo}
+                  alt="Home"
+                  style={{ width: "auto", height: "10vh", textAlign: "start" }}
+                />
+              </Link>
             </li>
             <li class="tabactive fire">
               <Link to="/fire">

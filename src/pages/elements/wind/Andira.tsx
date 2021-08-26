@@ -1,32 +1,38 @@
-import "../styles.css";
+import {
+  Center,
+  Container,
+  Card,
+  Image,
+  CardBody,
+  Texto,
+  Text,
+} from "../styles";
 
 import logo from "../../../assets/andira01.png";
 
 function Andira() {
   return (
-    <div className="App">
-      <body className="Container">
-        <div class="head">
+    <Center>
+      <Container>
+        <div>
           <h1>Macaco</h1>
         </div>
 
-        <div class="card">
-          <img src={logo} alt="Avatar" style={{ width: "auto" }} />
-          <div class="card-body">
-            <h4>
-              <b>Andira</b>
-            </h4>
-            <p>
+        <Card>
+          <Image src={logo} alt="Avatar" style={{ width: "auto" }} />
+          <CardBody>
+            <Texto>Andira</Texto>
+            <Text>
               Guardião do Oeste-Sudoeste como um dos Doze Generais Celestiais.
               Freqüentemente, tendo sonhos da utopia que seus ancestrais se
               propuseram, ela própria parte em uma jornada após um certo
               encontro fatídico. A determinação inabalável dessa deusa macaco a
               torna um recurso inestimável para a tripulação.
-            </p>
-          </div>
-        </div>
-      </body>
-    </div>
+            </Text>
+          </CardBody>
+        </Card>
+      </Container>
+    </Center>
   );
 }
 

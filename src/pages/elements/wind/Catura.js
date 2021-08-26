@@ -1,4 +1,4 @@
-import "../styles.css";
+import "../styles.tsx";
 
 import logo from "../../../assets/catura01.png";
 
