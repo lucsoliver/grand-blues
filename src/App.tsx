@@ -1,9 +1,11 @@
-import Header from "./components/Header";
+import React from "react";
+import Home from "./components/Header";
+import GlobalStyle from "./styles/global";
 
 function App() {
   return (
     <div>
-      <Header />
+      <Home />
     </div>
   );
 }
