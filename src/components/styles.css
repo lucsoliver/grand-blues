@@ -15,6 +15,11 @@ ul.tabnav {
   height: 5vh;
 }
 
+.hp {
+  margin-right: 65%;
+  display: block;
+}
+
 ul.tabnav li {
   display: inline-block;
 }
@@ -24,6 +29,10 @@ img {
   height: 30vh;
   margin-top: 14px;
   border-radius: 5px;
+}
+
+.elements {
+  margin: 5px;
 }
 
 .fire {
@@ -63,4 +72,9 @@ img {
 }
 
 @media only screen and (max-width: 768px) {
+  .hp {
+    margin-left: 0%;
+    margin-right: 0%;
+    display: inline-block;
+  }
 }

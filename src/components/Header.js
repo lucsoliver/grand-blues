@@ -27,17 +27,20 @@ export default class Header extends Component {
     return (
       <Router>
         <div class="tab">
+          <div class="hp tabactive home">
+            <Link to="/home">
+              <img
+                src={logo}
+                alt="Home"
+                style={{
+                  width: "auto",
+                  height: "10vh",
+                }}
+              />
+            </Link>
+          </div>
           <ul class="tabnav">
-            <li class="tabactive home">
-              <Link to="/home">
-                <img
-                  src={logo}
-                  alt="Home"
-                  style={{ width: "auto", height: "10vh", textAlign: "start" }}
-                />
-              </Link>
-            </li>
-            <li class="tabactive fire">
+            <li class="tabactive elements fire">
               <Link to="/fire">
                 <img
                   src={fire}
@@ -47,7 +50,7 @@ export default class Header extends Component {
               </Link>
             </li>
 
-            <li class="tabactive water">
+            <li class="tabactive elements water">
               <Link to="/water">
                 <img
                   src={water}
@@ -57,7 +60,7 @@ export default class Header extends Component {
               </Link>
             </li>
 
-            <li class="tabactive earth">
+            <li class="tabactive elements earth">
               <Link to="/earth">
                 <img
                   src={earth}
@@ -67,7 +70,7 @@ export default class Header extends Component {
               </Link>
             </li>
 
-            <li class="tabactive wind">
+            <li class="tabactive elements wind">
               <Link to="/wind">
                 <img
                   src={wind}
@@ -77,7 +80,7 @@ export default class Header extends Component {
               </Link>
             </li>
 
-            <li class="tabactive light">
+            <li class="tabactive elements light">
               <Link to="/light">
                 <img
                   src={light}
@@ -87,7 +90,7 @@ export default class Header extends Component {
               </Link>
             </li>
 
-            <li class="tabactive dark">
+            <li class="tabactive elements dark">
               <Link to="/dark">
                 <img
                   src={dark}
